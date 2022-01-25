@@ -5,6 +5,7 @@ This branch is the initial stage of the Leader board Api Project where i have bu
 
 # Screenshot
 
+![Leader-Board](https://user-images.githubusercontent.com/70577783/150947789-f1dcb4ae-4ae7-48f5-95d4-38b0abbf61c7.png)
 
 # Built with
 This project uses the following open source packages:
