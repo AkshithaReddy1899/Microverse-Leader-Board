@@ -32,6 +32,7 @@ Codepen [@Akshitha Reddy](https://codepen.io/Akshitha_Reddy)
 To clone this repo: You need to have git installed in your system.
 
 - git clone the repo in your terminal by: `gh repo clone AkshithaReddy1899/Microverse-Leader-Board`
+- run `npm install` to install the required packages
 - navigate to 
 `cd into the folder`
 
