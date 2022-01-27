@@ -1,11 +1,14 @@
 # Microverse-Leader-Board
 Project from module 2 week 4
 
-This branch is the initial stage of the Leader board Api Project where i have build the basic structure for it using webpack.
-
+This branch is created to make receive and send data to api using async and await methods
 # Screenshot
 
 ![Leader-Board](https://user-images.githubusercontent.com/70577783/150947789-f1dcb4ae-4ae7-48f5-95d4-38b0abbf61c7.png)
+
+# LIVE site
+
+[live](https://deploy-preview-2--eager-kilby-3b3348.netlify.app/)
 
 # Built with
 This project uses the following open source packages:
@@ -14,8 +17,11 @@ This project uses the following open source packages:
 - CSS
 - node
 - Weback
-- Bootstrap
 - Javascript
+
+# Deploy
+
+- Netlify
 
 # Author
 
