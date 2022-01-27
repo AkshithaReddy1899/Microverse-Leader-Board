@@ -21,4 +21,4 @@ const AddScoreApi = async (obj) => {
   return result;
 };
 
-export {GetApi, AddScoreApi};
+export { GetApi, AddScoreApi };
