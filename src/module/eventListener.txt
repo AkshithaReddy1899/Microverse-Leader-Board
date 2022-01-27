@@ -1,0 +1,11 @@
+import Validate from "./validation";
+
+const Event = () => {
+  Validate();
+};
+
+const Refresh = () => {
+  window.location.reload(true);
+};
+
+export { Event, Refresh };

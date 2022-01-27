@@ -1,12 +1,3 @@
-const GetApi = async () => {
-  const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/AR9918LMWfmph/scores');
-
-  const result = await response.json();
-
-  const array = result.result;
-  return array;
-};
-
 const AddScoreApi = async (obj) => {
   const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/AR9918LMWfmph/scores', {
     method: 'POST',
@@ -21,4 +12,4 @@ const AddScoreApi = async (obj) => {
   return result;
 };
 
-export {GetApi, AddScoreApi};
+export default AddScoreApi;

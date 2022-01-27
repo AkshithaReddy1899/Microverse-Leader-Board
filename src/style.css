@@ -24,7 +24,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .list-header {
@@ -52,4 +52,22 @@ form {
 input {
   padding: 7px;
   margin: 10px;
+}
+
+.error {
+  animation: hide 10s forwards;
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+
+  99% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }

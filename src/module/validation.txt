@@ -1,0 +1,16 @@
+
+import { Notification, Error } from './notification';
+
+const Validate = () => {
+  console.log('validate');
+  const inputName = document.getElementById('input-name');
+  const inputScore = document.getElementById('input-score');
+
+  if (inputName.value !== '' || inputScore.value !== '') {
+    console.log('NOT');
+    Add();
+  } else {
+    console.log('Empty');
+    Error();
+  }
+};

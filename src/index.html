@@ -10,17 +10,21 @@
 <body class="p-5">
   <main class="row-md-6 row-sd-12">
     <h1 class="header">Leader Board</h1>
+    <button class="btn btn-primary" id="modal">Click</button>
     <br><br>
+    <div id="error" class="error"></div>
     <section id="container" class="row-md-3 row-sd-12">
       <div class="list-container row-md-6 row-sd-12">
-        <h2 class="list-header">Recent scores&nbsp;&nbsp;<button type="button" class="btn btn-light" id="refresh">Refresh</button></h2>
+        <h2 class="list-header">Recent scores&nbsp;&nbsp;<button type="button" class="btn btn-light" id="refresh" onclick="Refresh()">Refresh</button></h2>
           <ul id="list"></ul>
       </div>
       <form id="form" class="row-md-3 row-sd-12">
-        <h2 class="list-header">Add your score</h2>  
-        <input type="text" id="input-name" placeholder="Your name">
-          <input type="number" id="input-score" placeholder="Your score">
-          <button type="submit" class="btn btn-light" id="submit">Submit</button>
+        <h2 class="list-header">Add your score</h2>
+        
+        <input type="text" id="input-name" placeholder="Your name" class="form-control">
+        
+        <input type="number" id="input-score" placeholder="Your score">
+        <button type="submit" class="btn btn-light" id="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
         </form>
     </section>
   </main>
