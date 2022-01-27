@@ -12,6 +12,7 @@ body {
   text-align: center;
   background-color: black;
   color: beige;
+  overflow-x: hidden;
 }
 
 .header {
@@ -24,21 +25,50 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
+}
+
+#list {
+  margin: 0;
+  padding: 0;
 }
 
 .list-header {
   padding: 10px;
   color: darkkhaki;
+  font-size: 1.2rem;
 }
 
 .list-item {
   margin: 10px;
-  text-align: left;
   padding: 5px;
   list-style: none;
   font-size: 1.2rem;
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.div-container {
+  width: 120%;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  border: 1px solid whitesmoke;
+  border-left: 3px solid aqua;
+  padding: 10px;
+}
+
+.img-container {
+  margin-right: 20px;
+}
+
+img {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background: paleturquoise;
 }
 
 form {
@@ -52,4 +82,24 @@ form {
 input {
   padding: 7px;
   margin: 10px;
+}
+
+#error,
+#notification {
+  animation: hide 10s forwards;
+  opacity: 0;
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+
+  99% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
