@@ -10,10 +10,10 @@ const Render = (list) => {
     const span = document.createElement('span');
     span.className = 'user';
     const spanScore = document.createElement('span');
-    span.textContent = `${element.user}`
-    spanScore.textContent = `${element.score}`
+    span.textContent = `${element.user}`;
+    spanScore.textContent = `${element.score}`;
     listItem.className = 'list-item';
-    
+
     divCont.appendChild(span);
     divCont.appendChild(spanScore);
     imgCont.appendChild(img);
