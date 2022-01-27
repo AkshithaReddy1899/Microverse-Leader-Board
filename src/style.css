@@ -51,7 +51,7 @@ body {
 }
 
 .div-container {
-  width: 100%;
+  width: 120%;
   display: flex;
   justify-content: space-between;
   align-self: center;
@@ -84,8 +84,10 @@ input {
   margin: 10px;
 }
 
-.error {
+#error,
+#notification {
   animation: hide 10s forwards;
+  opacity: 0;
 }
 
 @keyframes hide {

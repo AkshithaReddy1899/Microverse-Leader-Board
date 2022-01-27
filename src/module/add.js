@@ -1,20 +1,19 @@
-import { Error, Notification } from './notification.js';
 import { AddScoreApi } from './api.js';
-
-const inputName = document.getElementById('input-name');
-const inputScore = document.getElementById('input-score');
-
+ 
 const Add = () => {
-  const newScore = {
-    user: inputName.value,
-    score: inputScore.value,
-  };
+  const inputName = document.getElementById('input-name');
+  const inputScore = document.getElementById('input-score');
 
   if (inputName.value === '' || inputScore.value === '') {
-    Error();
+   
   } else {
+    
+    const newScore = {
+      user: inputName.value,
+      score: inputScore.value,
+    };
+
     AddScoreApi(newScore);
-    Notification();
   }
 };
 
