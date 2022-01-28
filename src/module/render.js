@@ -1,12 +1,17 @@
 const Render = (list) => {
   list.sort((a, b) => b.score - a.score);
+  console.log(list);
   list.forEach((element) => {
-    const listItem = document.createElement('li');
+   document.getElementById('list').innerHTML += `<li>
+    <div class="div-container">
+    <span class="user">${element.user}</span>&nbsp;
+    <span class="score">${element.score}</span>
+    </div>
+    </li>`
     const divCont = document.createElement('div');
-    const imgCont = document.createElement('div');
     divCont.className = 'div-container';
-    imgCont.className = 'img-container';
-    const img = document.createElement('img');
+    const spanId = document.createElement('span');
+    spanId.textContent = `${id+1}`;
     const span = document.createElement('span');
     span.className = 'user';
     const spanScore = document.createElement('span');
@@ -14,12 +19,11 @@ const Render = (list) => {
     spanScore.textContent = `${element.score}`;
     listItem.className = 'list-item';
 
+    divCont.appendChild(spanId);
     divCont.appendChild(span);
     divCont.appendChild(spanScore);
-    imgCont.appendChild(img);
-    listItem.appendChild(imgCont);
     listItem.appendChild(divCont);
-    document.getElementById('list').appendChild(listItem);
+    document.getElementById('list').appendChild(listItem);*/
   });
 };
 

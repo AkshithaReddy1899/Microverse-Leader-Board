@@ -18,6 +18,7 @@ This project uses the following open source packages:
 - node
 - Weback
 - Javascript
+- Tailwiind CSS
 
 # Deploy
 
@@ -32,7 +33,6 @@ Twitter [@Akshitha Reddy](https://twitter.com)
 Codepen [@Akshitha Reddy](https://codepen.io/Akshitha_Reddy)
 
 
-
 # Getting Started
 
 To clone this repo: You need to have git installed in your system.
@@ -43,7 +43,7 @@ To clone this repo: You need to have git installed in your system.
 `cd into the folder`
 
 - run `npm run build` to build the webpack script
-- run `npm start` to run the webpack sever on your browser
+- run `npm run start` to run the webpack sever on your browser
 
 # 🤝 Contributing
 Contributions, issues, and feature requests are welcome!

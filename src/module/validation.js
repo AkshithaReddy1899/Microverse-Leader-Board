@@ -1,23 +1,18 @@
-import { AddScoreApi } from './api.js';
+import Add from "./add";
 
-const Add = () => {
+const Validation = () => {
   const inputName = document.getElementById('input-name');
   const inputScore = document.getElementById('input-score');
   const error = document.getElementById('error');
   const notification = document.getElementById('notification');
 
-  const newScore = {
-    user: inputName.value,
-    score: inputScore.value,
-  };
-
   if(inputName.value === "" || inputScore.value === "") {
-    error.style.display = 'flex';
+    error.style.display = 'block';
   }else {
     error.style.display = 'none';
-    notification.style.display = 'flex';
-    AddScoreApi(newScore);
+    notification.style.display = 'block';
+    Add();
   }
-};
+}
 
-export default Add;
+export default Validation;

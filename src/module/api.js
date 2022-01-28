@@ -1,5 +1,5 @@
 const GetApi = async () => {
-  const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/AR9918LMWfmphs/scores');
+  const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/AR9918LMWfmph/scores');
 
   const result = await response.json();
 
@@ -8,7 +8,7 @@ const GetApi = async () => {
 };
 
 const AddScoreApi = async (obj) => {
-  const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/AR9918LMWfmphs/scores', {
+  const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/AR9918LMWfmph/scores', {
     method: 'POST',
     body: JSON.stringify(obj),
     headers: {
