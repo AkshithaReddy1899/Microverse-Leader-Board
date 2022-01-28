@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,100;1,200;1,300;1,400;1,600;1,700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -5,21 +7,24 @@
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
   font-size: 1rem;
   font-weight: 600;
-  font-family: "Courier New", Courier, monospace;
+  font-family: Poppins, sans-serif;
   text-align: center;
   background: #dde2e7;
   color: #1a202c;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .header {
   color: #1a202c;
   font-size: 2rem;
-  font-family: cursive;
+  float: left;
+  font-family: Poppins, sans-serif;
 }
 
 .list-header {
@@ -28,6 +33,15 @@ body {
   font-size: 1.5rem;
   margin-top: 30px;
   margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#refresh,
+#submit {
+  background: transparent;
+  border: 2px solid #1a202c;
+  color: #1a202c;
 }
 
 .error,
@@ -56,7 +70,7 @@ body {
 }
 
 #container {
-  margin-top: 20px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -64,20 +78,19 @@ body {
 }
 
 #list {
-  height: 50vh;
+  height: 400px;
+  width: 300px;
   padding: 10px;
-  overflow-y: hidden;
-}
-
-#list:hover {
-  overflow-y: scroll;
-  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 li {
   margin: 20px;
   border: 1px solid #dde2e7;
   padding: 10px;
+  border-radius: 5px;
+  background: #dde2e7;
+  box-shadow: 3px 2px 4px #1a202c;
 }
 
 ::-webkit-scrollbar {
@@ -98,16 +111,16 @@ li {
   float: right;
 }
 
-form {
+.input-container {
+  padding: 30px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
-.input-container {
-  width: 80%;
-  padding: 30px;
+#submit {
+  width: 100px;
+  margin-top: 15px;
+  margin-left: 130px;
 }
 
 input {
@@ -126,7 +139,30 @@ input::-webkit-inner-spin-button {
   color: slategrey;
 }
 
+footer {
+  margin: 30px;
+}
+
 @media screen and (min-width: 800px) {
+  main {
+    min-height: 95vh;
+  }
+
+  #container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  #list {
+    height: 50vh;
+    width: 50vw;
+    padding: 10px;
+    overflow-y: auto;
+  }
+
   .error,
   .notification {
     width: 450px;
@@ -139,10 +175,11 @@ input::-webkit-inner-spin-button {
     right: -35px;
   }
 
-  #container {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
+  form {
+    margin-left: 60px;
+  }
+
+  footer {
+    margin: 0;
   }
 }
