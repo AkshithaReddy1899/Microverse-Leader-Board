@@ -1,10 +1,12 @@
 # Microverse-Leader-Board
 Project from module 2 week 4
 
-This branch is created to make receive and send data to api using async and await methods
+This brach is create to add styling to the leader board.
+
 # Screenshot
 
-![Leader-Board](https://user-images.githubusercontent.com/70577783/150947789-f1dcb4ae-4ae7-48f5-95d4-38b0abbf61c7.png)
+![Leader-Board-desktop](https://user-images.githubusercontent.com/70577783/151518494-ddda6b78-54ec-404d-8e1e-096c0f01dfa2.png)
+![Leader-Board-mobile](https://user-images.githubusercontent.com/70577783/151518515-234b471c-199a-4cbc-a158-f2c88d634091.png)
 
 # Live
 
