@@ -7,24 +7,8 @@ const Render = (list) => {
     <span class="user">${element.user}</span>&nbsp;
     <span class="score">${element.score}</span>
     </div>
-    </li>`
-    const divCont = document.createElement('div');
-    divCont.className = 'div-container';
-    const spanId = document.createElement('span');
-    spanId.textContent = `${id+1}`;
-    const span = document.createElement('span');
-    span.className = 'user';
-    const spanScore = document.createElement('span');
-    span.textContent = `${element.user}`;
-    spanScore.textContent = `${element.score}`;
-    listItem.className = 'list-item';
-
-    divCont.appendChild(spanId);
-    divCont.appendChild(span);
-    divCont.appendChild(spanScore);
-    listItem.appendChild(divCont);
-    document.getElementById('list').appendChild(listItem);*/
-  });
+    </li>`;
+  })
 };
 
 export default Render;
