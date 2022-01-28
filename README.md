@@ -6,9 +6,9 @@ This branch is created to make receive and send data to api using async and awai
 
 ![Leader-Board](https://user-images.githubusercontent.com/70577783/150947789-f1dcb4ae-4ae7-48f5-95d4-38b0abbf61c7.png)
 
-# LIVE site
+# Live
 
-[live](https://deploy-preview-2--eager-kilby-3b3348.netlify.app/)
+[Live demo](https://clever-jepsen-3e2e2d.netlify.app)
 
 # Built with
 This project uses the following open source packages:
@@ -18,7 +18,7 @@ This project uses the following open source packages:
 - node
 - Weback
 - Javascript
-- Tailwiind CSS
+- Tailwind CSS
 
 # Deploy
 
