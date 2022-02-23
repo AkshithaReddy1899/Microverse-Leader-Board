@@ -5,26 +5,54 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Leader Board</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="p-5">
-  <main class="row-md-6 row-sd-12">
+<body>
+  <main>
     <h1 class="header">Leader Board</h1>
-    <br><br>
-    <div id="error"></div>
-    <section id="container" class="row-md-3 row-sd-12">
-      <div class="list-container row-md-6 row-sd-12">
-        <h2 class="list-header">Recent scores&nbsp;&nbsp;<button type="button" class="btn btn-light" id="refresh">Refresh</button></h2>
-          <ul id="list"></ul>
+    <div class="error bg-red-200 border-t-4 border-rose-900 rounded-b text-rose-800 p-2" id="error" role="alert">
+      <p class="error-text">
+        <svg class="fill-current h-6 w-6 text-rose-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/></svg>&nbsp;
+        <span>Name and Score cannot be empty. Try again :(</span>
+      </p>
+      <button type="button" class="close">X</button>
+    </div>
+    <div class="error bg-red-200 border-t-4 border-rose-900 rounded-b text-rose-800 p-2" id="error-number" role="alert">
+      <p class="error-text">
+        <svg class="fill-current h-6 w-6 text-rose-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/></svg>&nbsp;
+        <span>Score cannot be greate than 9876543210. Try again:(</span>
+      </p>
+      <button type="button" class="close">X</button>
+    </div>
+    <div class="notification bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md" id="notification" role="alert">
+          <p class="text-sm">New Score added. Refresh to see ;-)</p>
+          <button type="button" class="close">X</button>
       </div>
-      <form id="form" class="row-md-3 row-sd-12">
+    <br><br>
+
+    <section id="container">
+      <div class="list-container">
+        <h2 class="list-header">
+          <span>Recent Scores</span>
+          <button type="button" class="flex-shrink-0 border-transparent border-4 text-teal-600 hover:text-teal-300 text-sm font-bold py-1 px-2 rounded" id="refresh">Refresh</button></h2>
+          <ul id="list" class="bg-gray-500 shadow-2xl rounded-md"></ul>
+      </div>
+      <form id="form">
         <h2 class="list-header">Add your score</h2>
-        
-        <input type="text" id="input-name" placeholder="Your name" class="form-control">
-        
-        <input type="number" id="input-score" placeholder="Your score" class="form-control">
-        <button type="submit" class="btn btn-light" id="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
+        <div class="input-container bg-zinc-200">
+         
+          <input type="text" id="input-name" placeholder="Your name" class="appearance-none bg-transparent w-full text-slate-900 mr-3 py-1 px-2 leading-tight focus:outline-none" maxlength="15"> 
+          
+          <input type="number" id="input-score" placeholder="Your score" class="appearance-none bg-transparent w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none">
+
+          <button type="submit" class="hover:text-teal-300 text-sm font-bold py-1 px-2 rounded" id="submit">Submit</button>
+        </div>
         </form>
     </section>
   </main>
+  <footer>
+    <small>@ Copyright 2022 Akshitha Reddy | All Rights Reserved</small>
+</footer>
+
 </body>
 </html>

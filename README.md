@@ -1,14 +1,16 @@
 # Microverse-Leader-Board
 Project from module 2 week 4
 
-This branch is created to make receive and send data to api using async and await methods
+This brach is create to add styling to the leader board.
+
 # Screenshot
 
-![Leader-Board](https://user-images.githubusercontent.com/70577783/150947789-f1dcb4ae-4ae7-48f5-95d4-38b0abbf61c7.png)
+![Leader-Board-desktop](https://user-images.githubusercontent.com/70577783/151518494-ddda6b78-54ec-404d-8e1e-096c0f01dfa2.png)
+![Leader-Board-mobile](https://user-images.githubusercontent.com/70577783/151518515-234b471c-199a-4cbc-a158-f2c88d634091.png)
 
-# LIVE site
+# Live
 
-[live](https://deploy-preview-2--eager-kilby-3b3348.netlify.app/)
+[Live demo](https://clever-jepsen-3e2e2d.netlify.app)
 
 # Built with
 This project uses the following open source packages:
@@ -18,6 +20,7 @@ This project uses the following open source packages:
 - node
 - Weback
 - Javascript
+- Tailwind CSS
 
 # Deploy
 
@@ -32,7 +35,6 @@ Twitter [@Akshitha Reddy](https://twitter.com)
 Codepen [@Akshitha Reddy](https://codepen.io/Akshitha_Reddy)
 
 
-
 # Getting Started
 
 To clone this repo: You need to have git installed in your system.
@@ -43,7 +45,7 @@ To clone this repo: You need to have git installed in your system.
 `cd into the folder`
 
 - run `npm run build` to build the webpack script
-- run `npm start` to run the webpack sever on your browser
+- run `npm run start` to run the webpack sever on your browser
 
 # 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
